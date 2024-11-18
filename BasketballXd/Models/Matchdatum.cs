@@ -5,7 +5,7 @@ namespace BasketballXd.Models;
 
 public partial class Matchdatum
 {
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; }
 
     public DateTime SubIn { get; set; }
 

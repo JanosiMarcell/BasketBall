@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BasketballXd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8f2d4a6b404a635d03f3e4659aff4ac720088f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BasketballXd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BasketballXd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

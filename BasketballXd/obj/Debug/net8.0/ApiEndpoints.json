@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "BasketballXd.Controllers.MatchController",
+    "Method": "Post",
+    "RelativePath": "Matchdatum",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createMatch",
+        "Type": "BasketballXd.Models.CreateMatchDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BasketballXd.Models.Player",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "BasketballXd.Controllers.PlayerController",
     "Method": "Post",
     "RelativePath": "Player",
@@ -33,6 +59,79 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BasketballXd.Models.Player",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BasketballXd.Controllers.PlayerController",
+    "Method": "Put",
+    "RelativePath": "Player",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "updatePlayerDto",
+        "Type": "BasketballXd.Models.UpdatePlayerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BasketballXd.Models.Player",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BasketballXd.Controllers.PlayerController",
+    "Method": "Delete",
+    "RelativePath": "Player",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BasketballXd.Controllers.PlayerController",
+    "Method": "GetById",
+    "RelativePath": "Player/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "BasketballXd.Models.Player",
