@@ -68,5 +68,21 @@ namespace BasketballXd.Controllers
                 return NotFound();
             }
         }
+        [HttpDelete]
+        public ActionResult Delete(Guid Id)
+        {
+            using (var context = new BasketteamContext())
+            {
+                var delMatch = context.Matchdata.FirstOrDefault(x => x.Id == Id);
+                if (delMatch != null)
+                {
+                    context.Matchdata.Remove(delMatch);
+                    context.SaveChanges();
+                    return StatusCode(200, delMatch);
+                }
+                return NotFound();
+            }
+
+        }
     }
 }
